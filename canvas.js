@@ -67,6 +67,8 @@ var StarBackGround = {
     },
 
     start : function() {
+        this.init();
+        this.init_objects();
         move();
     }
 }
@@ -123,9 +125,8 @@ function move(){
 }
 
 
+// This is where you start and define properties for the background
 StarBackGround.options.bg = "pink";
 StarBackGround.options.obj.count = 100;
 StarBackGround.options.obj.color.push("yellow");
-StarBackGround.init();
-StarBackGround.init_objects();
 StarBackGround.start();
